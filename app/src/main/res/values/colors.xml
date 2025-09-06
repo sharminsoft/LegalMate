@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primary">#1976D2</color>
+    <color name="gray">#757575</color>
+    <color name="light_gray">#E0E0E0</color>
+
+
+
+
+    <color name="my_light_primary">#1976D2</color>
+    <color name="my_dark_primary">#020214</color>
+
+
+
+
+
+    <!-- Primary colors -->
+    <color name="primary_variant">#1565C0</color>
+    <color name="secondary">#03DAC6</color>
+    <color name="secondary_variant">#018786</color>
+
+    <!-- Background colors -->
+    <color name="background">#FFFFFF</color>
+    <color name="surface">#FFFFFF</color>
+
+    <!-- Text colors -->
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_secondary">#000000</color>
+    <color name="on_background">#000000</color>
+    <color name="on_surface">#000000</color>
+
+    <!-- State colors -->
+    <color name="error">#B00020</color>
+    <color name="success">#4CAF50</color>
+    <color name="warning">#FF9800</color>
+
+    <!-- Text colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_hint">#BDBDBD</color>
+
+    <!-- Card and elevation colors -->
+    <color name="card_background">#FFFFFF</color>
+    <color name="divider">#E0E0E0</color>
+
+
+    <!-- Primary Colors -->
+    <color name="teal_50">#E0F2F1</color>
+    <color name="teal_100">#B2DFDB</color>
+    <color name="teal_200">#80CBC4</color>
+    <color name="teal_300">#4DB6AC</color>
+    <color name="teal_400">#26A69A</color>
+    <color name="teal_500">#009688</color>
+    <color name="teal_600">#00897B</color>
+    <color name="teal_700">#00695C</color>
+    <color name="teal_800">#004D40</color>
+    <color name="teal_900">#00251A</color>
+
+    <!-- Green Colors -->
+    <color name="green_50">#E8F5E8</color>
+    <color name="green_100">#C8E6C9</color>
+    <color name="green_200">#A5D6A7</color>
+    <color name="green_300">#81C784</color>
+    <color name="green_400">#66BB6A</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="green_600">#43A047</color>
+    <color name="green_700">#388E3C</color>
+    <color name="green_800">#2E7D32</color>
+    <color name="green_900">#1B5E20</color>
+
+    <!-- Gray Colors -->
+    <color name="gray_50">#FAFAFA</color>
+    <color name="gray_100">#F5F5F5</color>
+    <color name="gray_200">#EEEEEE</color>
+    <color name="gray_300">#E0E0E0</color>
+    <color name="gray_400">#BDBDBD</color>
+    <color name="gray_500">#9E9E9E</color>
+    <color name="gray_600">#757575</color>
+    <color name="gray_700">#616161</color>
+    <color name="gray_800">#424242</color>
+    <color name="gray_900">#212121</color>
+
+    <!-- Light Gray -->
+    <color name="gray_light">#E5E5E5</color>
+
+    <!-- Basic Colors -->
+    <color name="white_80">#CCFFFFFF</color>
+    <color name="white_60">#99FFFFFF</color>
+    <color name="black_80">#CC000000</color>
+    <color name="black_60">#99000000</color>
+
+    <!-- Status Colors -->
+    <color name="info">#2196F3</color>
+
+    <!-- Background Colors -->
+    <color name="background_light">#FAFAFA</color>
+
+
+
+    <!-- App Specific Colors -->
+    <color name="primary_color">@color/teal_600</color>
+    <color name="primary_dark_color">@color/teal_700</color>
+    <color name="accent_color">@color/green_500</color>
+
+    <!-- Card Colors -->
+    <color name="card_shadow">#1A000000</color>
+
+    <!-- Slider Colors -->
+    <color name="slider_overlay">#80000000</color>
+
+
+
+
+
+
+    <!-- Secondary Colors -->
+    <color name="secondary_color">#388E3C</color>
+    <color name="secondary_dark_color">#2E7D32</color>
+    <color name="secondary_light_color">#C8E6C9</color>
+
+    <!-- Background Colors -->
+    <color name="background_color">#FAFAFA</color>
+    <color name="surface_color">#FFFFFF</color>
+    <color name="card_background_color">#FFFFFF</color>
+    <color name="edittext_background_color">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary_color">#212121</color>
+    <color name="text_secondary_color">#757575</color>
+    <color name="text_hint_color">#9E9E9E</color>
+    <color name="section_header_color">#1976D2</color>
+
+    <!-- Border Colors -->
+    <color name="border_color">#E0E0E0</color>
+    <color name="card_border_color">#E0E0E0</color>
+    <color name="edittext_border_color">#BDBDBD</color>
+    <color name="spinner_border_color">#BDBDBD</color>
+
+    <!-- Button Colors -->
+    <color name="button_normal_color">#1976D2</color>
+    <color name="button_pressed_color">#1565C0</color>
+    <color name="button_disabled_color">#BDBDBD</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="button_outline_color">#1976D2</color>
+
+    <!-- Status Colors -->
+    <color name="status_new_color">#4CAF50</color>
+    <color name="status_ongoing_color">#FF9800</color>
+    <color name="status_closed_color">#9E9E9E</color>
+    <color name="status_urgent_color">#F44336</color>
+    <color name="status_settled_color">#2196F3</color>
+
+    <!-- Priority Colors -->
+    <color name="priority_low_color">#4CAF50</color>
+    <color name="priority_medium_color">#FF9800</color>
+    <color name="priority_high_color">#FF5722</color>
+    <color name="priority_urgent_color">#F44336</color>
+    <color name="priority_critical_color">#E91E63</color>
+
+    <!-- Case Type Colors -->
+    <color name="case_civil_color">#2196F3</color>
+    <color name="case_criminal_color">#F44336</color>
+    <color name="case_family_color">#E91E63</color>
+    <color name="case_labor_color">#FF9800</color>
+    <color name="case_property_color">#4CAF50</color>
+    <color name="case_company_color">#9C27B0</color>
+
+    <!-- Icon Colors -->
+    <color name="icon_tint_color">#757575</color>
+    <color name="icon_active_color">#1976D2</color>
+    <color name="icon_inactive_color">#BDBDBD</color>
+
+    <!-- Error & Warning Colors -->
+    <color name="error_color">#F44336</color>
+    <color name="warning_color">#FF9800</color>
+    <color name="success_color">#4CAF50</color>
+    <color name="info_color">#2196F3</color>
+
+    <!-- Divider Colors -->
+    <color name="divider_color">#E0E0E0</color>
+    <color name="light_divider_color">#F5F5F5</color>
+
+    <!-- Shadow Colors -->
+    <color name="shadow_light">#1A000000</color>
+    <color name="shadow_medium">#33000000</color>
+    <color name="shadow_dark">#4D000000</color>
+
+    <!-- Transparent Colors -->
+    <color name="transparent">#00000000</color>
+    <color name="semi_transparent_black">#80000000</color>
+    <color name="semi_transparent_white">#80FFFFFF</color>
+
+    <!-- Special Colors for Legal Context -->
+    <color name="legal_gold">#FFD700</color>
+    <color name="justice_blue">#1E3A8A</color>
+    <color name="court_burgundy">#800020</color>
+    <color name="law_green">#006A4E</color>
+
+    <!-- Material Design Colors -->
+    <color name="md_red_500">#F44336</color>
+    <color name="md_pink_500">#E91E63</color>
+    <color name="md_purple_500">#9C27B0</color>
+    <color name="md_deep_purple_500">#673AB7</color>
+    <color name="md_indigo_500">#3F51B5</color>
+    <color name="md_blue_500">#2196F3</color>
+    <color name="md_light_blue_500">#03A9F4</color>
+    <color name="md_cyan_500">#00BCD4</color>
+    <color name="md_teal_500">#009688</color>
+    <color name="md_green_500">#4CAF50</color>
+    <color name="md_light_green_500">#8BC34A</color>
+    <color name="md_lime_500">#CDDC39</color>
+    <color name="md_yellow_500">#FFEB3B</color>
+    <color name="md_amber_500">#FFC107</color>
+    <color name="md_orange_500">#FF9800</color>
+    <color name="md_deep_orange_500">#FF5722</color>
+    <color name="md_brown_500">#795548</color>
+    <color name="md_grey_500">#9E9E9E</color>
+    <color name="md_blue_grey_500">#607D8B</color>
+
+    <!-- Night Mode Colors -->
+    <color name="night_background">#121212</color>
+    <color name="night_surface">#1E1E1E</color>
+    <color name="night_primary">#BB86FC</color>
+    <color name="night_text_primary">#FFFFFF</color>
+    <color name="night_text_secondary">#B3FFFFFF</color>
+
+
+
+    <color name="primary_blue">#1976D2</color>
+    <color name="primary_blue_dark">#1565C0</color>
+    <color name="primary_blue_light">#42A5F5</color>
+
+    <!-- Background Colors -->
+
+    <color name="card_stroke">#E0E0E0</color>
+
+    <!-- Text Colors -->
+
+    <color name="text_disabled">#BDBDBD</color>
+
+    <!-- Status Colors -->
+    <color name="success_green">#4CAF50</color>
+    <color name="success_green_light">#E8F5E8</color>
+    <color name="warning_orange">#FF9800</color>
+    <color name="warning_orange_light">#FFF3E0</color>
+    <color name="error_red">#F44336</color>
+    <color name="rating_star">#FFC107</color>
+
+    <!-- Utility Colors -->
+    <color name="shadow">#1A000000</color>
+    <color name="online_status">#4CAF50</color>
+
+    <!-- Transparency -->
+    <color name="black_overlay">#80000000</color>
+    <color name="white_overlay">#80FFFFFF</color>
+
+
+    <!-- Primary Colors -->
+
+    <color name="primary_container">#E3F2FD</color>
+    <color name="on_primary_container">#0D47A1</color>
+
+    <!-- Surface Colors -->
+
+    <color name="surface_variant">#F5F5F5</color>
+
+    <color name="on_surface_variant">#757575</color>
+
+    <!-- Outline Colors -->
+    <color name="outline_variant">#E0E0E0</color>
+
+
+    <!-- Primary Colors -->
+    <color name="primary_dark">#0D47A1</color>
+    <color name="primary_light">#E3F2FD</color>
+
+    <!-- Accent Colors -->
+    <color name="accent">#FF5722</color>
+    <color name="accent_dark">#D84315</color>
+    <color name="accent_light">#FFEBE3</color>
+
+    <!-- Success Colors -->
+    <color name="success_dark">#2E7D32</color>
+    <color name="success_light">#E8F5E8</color>
+
+    <!-- Warning Colors -->
+
+    <color name="warning_dark">#F57C00</color>
+    <color name="warning_light">#FFF3E0</color>
+
+    <!-- Error Colors -->
+    <color name="error_dark">#C62828</color>
+    <color name="error_light">#FFEBEE</color>
+
+    <!-- Text Colors -->
+    <color name="background_card">#FFFFFF</color>
+    <color name="background_dark">#303030</color>
+
+
+    <!-- Status Colors -->
+
+    <color name="success_container">#E8F5E8</color>
+    <color name="on_success_container">#1B5E20</color>
+
+
+    <color name="warning_container">#FFF3E0</color>
+    <color name="on_warning_container">#E65100</color>
+
+
+    <color name="error_container">#FFEBEE</color>
+    <color name="on_error_container">#C62828</color>
+
+
+    <color name="info_container">#E3F2FD</color>
+    <color name="on_info_container">#0D47A1</color>
+
+
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryLight">#E3F2FD</color>
+
+    <color name="green_status">#4CAF50</color>
+    <color name="red_status">#F44336</color>
+    <color name="orange_status">#FF9800</color>
+
+    <!-- Add these if not already present -->
+    <color name="light_blue_background">#E3F2FD</color>
+    <color name="secondary_text_color">#757575</color>
+    <color name="handle_bar_color">#BDBDBD</color>
+
+    <color name="colorPrimaryDark">#1565C0</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecondary">#757575</color>
+
+    <color name="statusDraft">#FF9800</color>
+    <color name="statusCompleted">#4CAF50</color>
+    <color name="statusPending">#2196F3</color>
+
+    <color name="cardBackground">#FFFFFF</color>
+    <color name="backgroundColor">#F8F9FA</color>
+
+
+
+</resources>

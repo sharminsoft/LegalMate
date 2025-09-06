@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sort lawyers by:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:layout_marginBottom="16dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rbSortRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rating (High to Low)"
+            android:textSize="14sp"
+            android:checked="true"
+            android:drawableStart="@drawable/ic_star_filled"
+            android:drawableTint="@color/rating_star"
+            android:drawablePadding="8dp"
+            android:padding="12dp" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rbSortExperience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Experience (High to Low)"
+            android:textSize="14sp"
+            android:drawableStart="@drawable/ic_experience"
+            android:drawableTint="@color/primary_blue"
+            android:drawablePadding="8dp"
+            android:padding="12dp" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rbSortFee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fee (Low to High)"
+            android:textSize="14sp"
+            android:drawableStart="@drawable/ic_money"
+            android:drawableTint="@color/success_green"
+            android:drawablePadding="8dp"
+            android:padding="12dp" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rbSortName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name (A to Z)"
+            android:textSize="14sp"
+            android:drawableStart="@drawable/ic_sort_alphabetical"
+            android:drawableTint="@color/text_secondary"
+            android:drawablePadding="8dp"
+            android:padding="12dp" />
+
+    </RadioGroup>
+
+</LinearLayout>

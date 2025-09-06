@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_slider.xml -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:layout_height="180dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginStart="2dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginTop="2dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/slider_gradient_bg">
+
+        <!-- Left Content -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvSliderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Talk to a Lawyer Now"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvSliderSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get professional legal advice instantly"
+                android:textSize="12sp"
+                android:textColor="@color/white_80"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/btnSliderAction"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Get Started"
+                android:textSize="12sp"
+                android:textColor="@color/teal_700"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:backgroundTint="@color/white"
+                />
+
+        </LinearLayout>
+
+        <!-- Right Image/Icon -->
+        <ImageView
+            android:id="@+id/ivSliderImage"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_legal_advice"
+            android:scaleType="centerInside"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

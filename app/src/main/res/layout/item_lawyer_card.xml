@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp"
+    app:strokeColor="@color/card_stroke"
+    app:strokeWidth="1dp"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Lawyer Profile Image -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivLawyerPhoto"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:scaleType="centerCrop"
+            app:civ_border_color="@color/primary_blue"
+            app:strokeWidth="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/lowyer_placeholder"
+            />
+
+        <!-- Online Status Indicator -->
+        <View
+            android:id="@+id/onlineIndicator"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/online_status_background"
+            app:layout_constraintBottom_toBottomOf="@id/ivLawyerPhoto"
+            app:layout_constraintEnd_toEndOf="@id/ivLawyerPhoto" />
+
+        <!-- Lawyer Name -->
+        <TextView
+            android:id="@+id/tvLawyerName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="Advocate John Smith"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintStart_toEndOf="@id/ivLawyerPhoto"
+            app:layout_constraintTop_toTopOf="@id/ivLawyerPhoto"
+            app:layout_constraintEnd_toStartOf="@id/btnFavorite" />
+
+        <!-- Specialization -->
+        <TextView
+            android:id="@+id/tvSpecialization"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Corporate Law • Criminal Law"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintStart_toStartOf="@id/tvLawyerName"
+            app:layout_constraintTop_toBottomOf="@id/tvLawyerName"
+            app:layout_constraintEnd_toEndOf="@id/tvLawyerName" />
+
+        <!-- Experience and Location -->
+        <LinearLayout
+            android:id="@+id/experienceLocationLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@id/tvLawyerName"
+            app:layout_constraintTop_toBottomOf="@id/tvSpecialization"
+            app:layout_constraintEnd_toEndOf="@id/tvLawyerName">
+
+            <TextView
+                android:id="@+id/tvExperience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 years exp"
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                android:drawableStart="@drawable/ic_experience"
+                android:drawableTint="@color/text_secondary"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="12dp"
+                android:layout_marginHorizontal="8dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/divider" />
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dhaka, Bangladesh"
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                android:drawableStart="@drawable/ic_location"
+                android:drawableTint="@color/text_secondary"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:ellipsize="end" />
+
+        </LinearLayout>
+
+        <!-- Favorite Button -->
+        <ImageButton
+            android:id="@+id/btnFavorite"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_favorite_border"
+            android:contentDescription="Add to favorites"
+            app:layout_constraintTop_toTopOf="@id/ivLawyerPhoto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@color/text_secondary" />
+
+        <!-- Rating and Reviews Section -->
+        <LinearLayout
+            android:id="@+id/ratingLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivLawyerPhoto">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_star_filled"
+                app:tint="@color/rating_star" />
+
+            <TextView
+                android:id="@+id/tvRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="4.8"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                 />
+
+            <TextView
+                android:id="@+id/tvReviewCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="(124 reviews)"
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                />
+
+        </LinearLayout>
+
+        <!-- Consultation Fee -->
+        <TextView
+            android:id="@+id/tvConsultationFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="৳1,500/consultation"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_blue"
+            app:layout_constraintTop_toTopOf="@id/ratingLayout"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Available Badge -->
+        <TextView
+            android:id="@+id/tvAvailableStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Available Now"
+            android:textSize="12sp"
+            android:textColor="@color/success_green"
+            android:background="@drawable/available_status_background"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ratingLayout" />
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="end"
+            app:layout_constraintTop_toBottomOf="@id/tvAvailableStatus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- View Profile Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnViewProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:text="View Profile"
+                android:textSize="12sp"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                app:strokeColor="@color/primary_blue"
+                app:strokeWidth="1dp"
+                app:cornerRadius="8dp" />
+
+            <!-- Contact Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Message"
+                android:textSize="12sp"
+                app:backgroundTint="@color/primary_blue"
+                app:cornerRadius="8dp"
+                style="@style/Widget.Material3.Button" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

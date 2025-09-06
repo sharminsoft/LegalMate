@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/surface_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <!-- Document Type Icon -->
+        <ImageView
+            android:id="@+id/ivDocumentType"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/ic_document"
+            android:tint="@color/primary_color"
+            android:contentDescription="Document type" />
+
+        <!-- Document Info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Document Name -->
+            <TextView
+                android:id="@+id/tvDocumentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Document Name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary_color"
+                android:maxLines="2"
+                android:ellipsize="end" />
+
+            <!-- Document Details Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical">
+
+                <!-- Document Size -->
+                <TextView
+                    android:id="@+id/tvDocumentSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1.2 MB"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_secondary_color"
+                    android:layout_marginEnd="12dp" />
+
+                <!-- Status -->
+                <TextView
+                    android:id="@+id/tvDocumentStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Uploaded"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/success_color"
+                    android:background="@drawable/status_badge_background"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp" />
+
+            </LinearLayout>
+
+            <!-- Progress Bar (for uploading status) -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="4dp"
+                android:progress="0"
+                android:max="100"
+                android:progressTint="@color/primary_color"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- View Document Button -->
+            <ImageView
+                android:id="@+id/ivViewDocument"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/ic_view"
+                android:tint="@color/primary_color"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="4dp"
+                android:contentDescription="View document"
+                android:visibility="gone" />
+
+            <!-- Remove Document Button -->
+            <ImageView
+                android:id="@+id/ivRemoveDocument"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/ic_delete"
+                android:tint="@color/error_color"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="4dp"
+                android:contentDescription="Remove document" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

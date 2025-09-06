@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "869937007824",
+    "firebase_url": "https://legalmate-7259e-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "legalmate-7259e",
+    "storage_bucket": "legalmate-7259e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869937007824:android:dc18839204351ba03a22d5",
+        "android_client_info": {
+          "package_name": "com.yourname.legalmate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869937007824-b6e8ctp1jo4c5kroqidh8tthbskaqstd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIMCC8eJEd__PSIWBDS43onLIR-j5R0Uo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "869937007824-b6e8ctp1jo4c5kroqidh8tthbskaqstd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

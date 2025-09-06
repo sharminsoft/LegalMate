@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Practice Areas Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Practice Areas"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cbCriminalLaw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Criminal Law"
+                android:textSize="14sp" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cbCivilLaw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Civil Law"
+                android:textSize="14sp" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cbFamilyLaw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Family Law"
+                android:textSize="14sp" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cbCorporateLaw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Corporate Law"
+                android:textSize="14sp" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cbPropertyLaw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Property Law"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Consultation Types Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consultation Types"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cbOnline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Online"
+                android:textSize="14sp" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cbInPerson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="In-Person"
+                android:textSize="14sp" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cbPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textSize="14sp" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cbChat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chat"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Working Days Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Available Days"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cbSaturday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saturday"
+                android:textSize="14sp" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cbSunday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sunday"
+                android:textSize="14sp" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cbMonday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Monday"
+                android:textSize="14sp" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cbTuesday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tuesday"
+                android:textSize="14sp" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cbWednesday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wednesday"
+                android:textSize="14sp" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cbThursday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thursday"
+                android:textSize="14sp" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cbFriday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Friday"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Fee Range Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fee Range"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="12dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rbAllFees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All Fee Ranges"
+                android:textSize="14sp"
+                android:checked="true" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rbUnder1000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Under ৳1,000"
+                android:textSize="14sp" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rb1000to3000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="৳1,000 - ৳3,000"
+                android:textSize="14sp" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rbAbove3000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Above ৳3,000"
+                android:textSize="14sp" />
+
+        </RadioGroup>
+
+        <!-- Experience Range Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Experience"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="12dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rbAllExp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All Experience Levels"
+                android:textSize="14sp"
+                android:checked="true" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rbUnder5Years"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Under 5 Years"
+                android:textSize="14sp" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rb5to10Years"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5-10 Years"
+                android:textSize="14sp" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rbAbove10Years"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Above 10 Years"
+                android:textSize="14sp" />
+
+        </RadioGroup>
+
+        <!-- Gender Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="12dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rbAnyGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Any Gender"
+                android:textSize="14sp"
+                android:checked="true" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rbMale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textSize="14sp" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rbFemale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textSize="14sp" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</ScrollView>

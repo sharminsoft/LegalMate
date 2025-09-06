@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Internet permission for Firebase and Cloudinary -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Storage permissions for different Android versions -->
+    <!-- For Android 13+ (API 33+) -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" /> <!-- For Android 6-12 (API 23-32) -->
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" /> <!-- For Android 10+ (API 29+) - Required for Cloudinary uploads -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"
+        tools:ignore="ScopedStorage" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT" />
+
+            <data android:mimeType="image/*" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.PICK" />
+
+            <data android:mimeType="image/*" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".LegalMateApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LegalMate"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".LawyerPortal.Activities.LawyerDocumentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LawyerPortal.Activities.LawyerLocationInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GeneralPersonPortal.Activities.FaqsLegalTipsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GeneralPersonPortal.Activities.CaseTrackingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GeneralPersonPortal.Activities.MyCalendarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GeneralPersonPortal.Activities.ClientCalendarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LawyerPortal.Activities.LawyerAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GeneralPersonPortal.Activities.BookConsultationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LawyerPortal.Activities.LawyerCalendarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LawyerPortal.Activities.CaseStatusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GeneralPersonPortal.Activities.GeneralProfileInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Chat.ChatActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".GeneralPersonPortal.Activities.LawyerProfileDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GeneralPersonPortal.Activities.FindLawyerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LawyerPortal.Activities.LawyerProfileInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LawyerPortal.Activities.AddCaseInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GeneralPersonPortal.Activities.GeneralPersonDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OuterActivities.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LawyerPortal.Activities.LawyerDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LawyerPortal.AccountCreation.LawyerProfileSetupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LawyerPortal.AccountCreation.LawyerCreateAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GeneralPersonPortal.AccountCreation.GenPerCreateAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OuterActivities.SelectRoleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OuterActivities.GreetingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OuterActivities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+
+    </application>
+
+</manifest>

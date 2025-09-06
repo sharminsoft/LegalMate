@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">LegalMate</string>
+    <string name="default_web_client_id">869937007824-b6e8ctp1jo4c5kroqidh8tthbskaqstd.apps.googleusercontent.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+
+
+
+
+
+
+
+    <!-- Lawyers Documents Activity Strings -->
+
+    <!-- English -->
+    <string name="document_management">Document Management</string>
+    <string name="create_document">Create Document</string>
+    <string name="no_documents_yet">No documents created yet</string>
+    <string name="tap_plus_to_create">Tap the + button to create your first document</string>
+
+    <!-- Document Types -->
+    <string name="petition">Petition</string>
+    <string name="affidavit">Affidavit</string>
+    <string name="contract">Contract</string>
+
+    <!-- Actions -->
+    <string name="view">View</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="update">Update</string>
+    <string name="generate_pdf">Generate PDF</string>
+
+    <!-- Status -->
+    <string name="draft">Draft</string>
+    <string name="completed">Completed</string>
+    <string name="pending">Pending</string>
+
+    <!-- Messages -->
+    <string name="field_required">This field is required</string>
+    <string name="fill_required_fields">Please fill all required fields</string>
+    <string name="document_saved">Document saved successfully</string>
+    <string name="document_updated">Document updated successfully</string>
+    <string name="document_deleted">Document deleted successfully</string>
+    <string name="error_saving">Error saving document</string>
+    <string name="error_updating">Error updating document</string>
+    <string name="error_deleting">Error deleting document</string>
+    <string name="error_loading">Error loading documents</string>
+    <string name="generating_pdf">Generating PDF...</string>
+
+    <!-- Confirmation -->
+    <string name="confirm_delete">Confirm Delete</string>
+    <string name="confirm_delete_message">Are you sure you want to delete this document?</string>
+
+    <!-- Bangla strings would be added similarly with _bn suffix -->
+    <string name="document_management_bn">নথি ব্যবস্থাপনা</string>
+    <string name="create_document_bn">নথি তৈরি করুন</string>
+    <!-- Add more Bangla translations as needed -->
+
+
+</resources>

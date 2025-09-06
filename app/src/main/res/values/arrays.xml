@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Client Types -->
+    <string-array name="client_types">
+        <item>Select Client Type</item>
+        <item>Individual</item>
+        <item>Company</item>
+        <item>Organization</item>
+        <item>Government Entity</item>
+        <item>NGO</item>
+    </string-array>
+
+    <!-- Case Types -->
+    <string-array name="case_types">
+        <item>Select Case Type</item>
+        <item>Civil</item>
+        <item>Criminal</item>
+        <item>Family</item>
+        <item>Labor</item>
+        <item>Property</item>
+        <item>Company Law</item>
+        <item>Commercial</item>
+        <item>Constitutional</item>
+        <item>Administrative</item>
+        <item>Tax</item>
+        <item>Immigration</item>
+        <item>Environmental</item>
+        <item>Intellectual Property</item>
+        <item>Banking and Finance</item>
+        <item>Insurance</item>
+        <item>Consumer Protection</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- Reminder Options -->
+    <string-array name="reminder_options">
+        <item>Select Reminder</item>
+        <item>1 day before</item>
+        <item>2 days before</item>
+        <item>3 days before</item>
+        <item>1 week before</item>
+        <item>Same day morning (9:00 AM)</item>
+        <item>2 hours before</item>
+        <item>1 hour before</item>
+        <item>30 minutes before</item>
+        <item>Custom time</item>
+        <item>No reminder</item>
+    </string-array>
+
+    <!-- Case Status Options -->
+    <string-array name="case_status_options">
+        <item>Select Status</item>
+        <item>New</item>
+        <item>Ongoing</item>
+        <item>Under Review</item>
+        <item>Pending Documentation</item>
+        <item>Court Hearing Scheduled</item>
+        <item>In Trial</item>
+        <item>Awaiting Judgment</item>
+        <item>Won</item>
+        <item>Lost</item>
+        <item>Settled</item>
+        <item>Withdrawn</item>
+        <item>Appealed</item>
+        <item>Closed</item>
+        <item>On Hold</item>
+    </string-array>
+
+    <!-- Case Stage Options -->
+    <string-array name="case_stage_options">
+        <item>Select Stage</item>
+        <item>Initial Consultation</item>
+        <item>Case Assessment</item>
+        <item>Document Preparation</item>
+        <item>Filing</item>
+        <item>Investigation</item>
+        <item>Discovery</item>
+        <item>Pre-trial Motions</item>
+        <item>Mediation</item>
+        <item>Settlement Negotiations</item>
+        <item>Trial Preparation</item>
+        <item>Trial</item>
+        <item>Hearing</item>
+        <item>Cross Examination</item>
+        <item>Final Arguments</item>
+        <item>Judgment</item>
+        <item>Appeal Preparation</item>
+        <item>Appeal</item>
+        <item>Execution</item>
+        <item>Case Closure</item>
+    </string-array>
+
+    <!-- Priority Levels -->
+    <string-array name="priority_levels">
+        <item>Low Priority</item>
+        <item>Medium Priority</item>
+        <item>High Priority</item>
+        <item>Urgent</item>
+        <item>Critical</item>
+    </string-array>
+
+    <!-- Court Types -->
+    <string-array name="court_types">
+        <item>Select Court Type</item>
+        <item>Supreme Court</item>
+        <item>High Court</item>
+        <item>District Court</item>
+        <item>Metropolitan Court</item>
+        <item>Family Court</item>
+        <item>Labor Court</item>
+        <item>Commercial Court</item>
+        <item>Special Court</item>
+        <item>Tribunal</item>
+        <item>Magistrate Court</item>
+        <item>Sessions Court</item>
+    </string-array>
+
+    <!-- Document Types -->
+    <string-array name="document_types">
+        <item>Legal Notice</item>
+        <item>Petition</item>
+        <item>Affidavit</item>
+        <item>Power of Attorney</item>
+        <item>Contract</item>
+        <item>Agreement</item>
+        <item>Court Order</item>
+        <item>Judgment</item>
+        <item>Evidence</item>
+        <item>Medical Report</item>
+        <item>Police Report</item>
+        <item>Financial Document</item>
+        <item>Property Document</item>
+        <item>Identity Document</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- Hearing Types -->
+    <string-array name="hearing_types">
+        <item>Select Hearing Type</item>
+        <item>First Hearing</item>
+        <item>Regular Hearing</item>
+        <item>Evidence Recording</item>
+        <item>Cross Examination</item>
+        <item>Argument Hearing</item>
+        <item>Final Hearing</item>
+        <item>Judgment</item>
+        <item>Bail Hearing</item>
+        <item>Interim Order</item>
+        <item>Status Conference</item>
+        <item>Settlement Conference</item>
+        <item>Pre-trial Conference</item>
+        <item>Motion Hearing</item>
+        <item>Appeal Hearing</item>
+    </string-array>
+
+    <!-- Notification Types -->
+    <string-array name="notification_types">
+        <item>SMS</item>
+        <item>Email</item>
+        <item>Push Notification</item>
+        <item>All</item>
+        <item>None</item>
+    </string-array>
+
+</resources>
